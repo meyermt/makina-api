@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/makina.iml" filepath="$PROJECT_DIR$/makina.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/makina_main.iml" filepath="$PROJECT_DIR$/.idea/modules/makina_main.iml" group="makina" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/makina_test.iml" filepath="$PROJECT_DIR$/.idea/modules/makina_test.iml" group="makina" />
+    </modules>
+  </component>
+</project>
