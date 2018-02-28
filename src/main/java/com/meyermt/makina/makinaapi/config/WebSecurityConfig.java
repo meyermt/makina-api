@@ -1,6 +1,7 @@
 package com.meyermt.makina.makinaapi.config;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -14,7 +15,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     //for now allow anyone
     http
         .authorizeRequests()
-        .anyRequest().permitAll();
+        .anyRequest().permitAll()
+        .and()
+        // TODO: should remove csrf disabling
+        .csrf().disable()
+        .authorizeRequests()
+        .antMatchers("/makinate").permitAll();
   }
 
 }
